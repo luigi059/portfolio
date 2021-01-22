@@ -1,5 +1,5 @@
 import React from 'react';
-import { Video, Container, Content, MainText, SubText, Icons, Button } from './styles/header';
+import { Video, Container, MainText, SubText, Icons, Button } from './styles/header';
 
 export default function Header({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -12,10 +12,6 @@ Header.Video = function HeaderVideo({ src }) {
       </video>
     </Video>
   );
-};
-
-Header.Content = function HeaderContent({ children, ...restProps }) {
-  return <Content {...restProps}>{children}</Content>;
 };
 
 Header.MainText = function HeaderMainText({ children, ...restProps }) {

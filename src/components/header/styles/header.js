@@ -46,20 +46,12 @@ export const Video = styled.div`
   object-fit: cover;
 `;
 
-export const Container = styled.div`
+export const Container = styled.section`
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(15, 48, 87, 0.8), rgba(0, 88, 122, 0.8));
   background-size: cover;
   background-position: top;
   position: relative;
-`;
-
-export const Content = styled.div`
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 `;
 
 export const MainText = styled.h1`
