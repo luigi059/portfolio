@@ -4,7 +4,7 @@ import { Video, Container, Content, MainText, SubText, Icons, Button } from './s
 export default function Header({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
-Header.Video = function HeaderVideo({ src, ...restProps }) {
+Header.Video = function HeaderVideo({ src }) {
   return (
     <Video>
       <video autoPlay muted loop>

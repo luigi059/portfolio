@@ -78,7 +78,7 @@ export const SubText = styled.h2`
   font-weight: 600;
   letter-spacing: 0.5rem;
   color: white;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   animation: ${moveInRight} 1s linear;
 `;
 
