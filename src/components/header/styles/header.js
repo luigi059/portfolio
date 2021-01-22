@@ -59,7 +59,7 @@ export const MainText = styled.h1`
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 1rem;
-  color: white;
+  color: #f4f5db;
   margin-bottom: 3rem;
   animation: ${moveInLeft} 1s linear;
 `;
@@ -69,7 +69,7 @@ export const SubText = styled.h2`
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.5rem;
-  color: white;
+  color: #f4f5db;
   margin-bottom: 3rem;
   animation: ${moveInRight} 1s linear;
 `;
@@ -91,6 +91,7 @@ export const Button = styled.button`
     border: none;
     cursor: pointer;
     outline: none;
+    background-color: #f4f5db;
     color: #0f3057;
     animation: ${moveInBottom} 1s linear;
   }

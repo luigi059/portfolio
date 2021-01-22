@@ -10,9 +10,9 @@ export const Container = styled.section`
 
 export const MainText = styled.h1`
   font-family: 'sans-serif', 'Arial';
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 400;
-  color: white;
+  color: #f4f5db;
   margin: 2rem 0;
 `;
 
@@ -20,6 +20,6 @@ export const SubText = styled.h2`
   font-family: 'sans-serif', 'Arial';
   font-size: 2rem;
   font-weight: 200;
-  color: white;
+  color: #f4f5db;
   margin-bottom: 2rem;
 `;
