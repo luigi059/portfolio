@@ -1,6 +1,7 @@
 import React from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import HttpIcon from '@material-ui/icons/Http';
 import { Container } from './styles/icon';
 
 export default function Icon({ children, ...restProps }) {
@@ -30,6 +31,20 @@ Icon.GitHub = function IconGitHub({ to }) {
   return (
     <a href={to}>
       <GitHubIcon style={style} />
+    </a>
+  );
+};
+
+Icon.Web = function IconWeb({ to }) {
+  const style = {
+    color: 'white',
+    fontSize: '5rem',
+    cursor: 'pointer',
+    marginRight: '3rem',
+  };
+  return (
+    <a href={to}>
+      <HttpIcon style={style} />
     </a>
   );
 };

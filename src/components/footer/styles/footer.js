@@ -23,3 +23,10 @@ export const SubText = styled.h2`
   color: #f4f5db;
   margin-bottom: 2rem;
 `;
+
+export const TM = styled.div`
+  height: 5rem;
+  font-family: 'sans-serif', 'Arial';
+  color: #f4f5db;
+  background-color: #222831;
+`;

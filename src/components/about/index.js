@@ -30,5 +30,5 @@ About.PicArea = function AboutPicArea({ children, ...restProps }) {
 };
 
 About.Picture = function AboutPicture({ src, style, ...restProps }) {
-  return <Picture src={src} alt="" />;
+  return <Picture src={src} alt="" {...restProps} />;
 };
