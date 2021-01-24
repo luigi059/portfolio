@@ -8,6 +8,10 @@ export const Container = styled.section`
 export const Content = styled.div`
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 56.25em) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const TextArea = styled.div`

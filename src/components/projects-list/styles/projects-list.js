@@ -11,6 +11,9 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: 56.25em) {
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.h1`
@@ -29,6 +32,14 @@ export const Card = styled.div`
   width: 30rem;
   margin: 0 3rem;
   positon: relative;
+  border-radius: 3px;
+  @media only screen and (max-width: 56.25em) {
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+    width: 40rem;
+  }
 `;
 
 export const FrontCard = styled.div`
@@ -46,6 +57,14 @@ export const FrontCard = styled.div`
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   ${Card}:hover & {
     transform: rotateY(-180deg);
+  }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+    ${Card}:hover & {
+      transform: rotateY(0);
+    }
   }
 `;
 
@@ -65,6 +84,12 @@ export const BackCard = styled.div`
   transform: rotateY(180deg);
   ${Card}:hover & {
     transform: rotateY(0);
+  }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    transform: rotateY(0);
+    position: relative;
+    border-radius: 0;
   }
 `;
 

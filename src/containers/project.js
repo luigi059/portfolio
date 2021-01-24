@@ -1,9 +1,9 @@
 import React from 'react';
 import { ProjectList, Center, Icon } from '../components';
 
-export default function ProjectContainer() {
+export default function ProjectContainer({ prop }) {
   return (
-    <ProjectList>
+    <ProjectList prop={prop}>
       <ProjectList.Title>PROJECTS</ProjectList.Title>
       <ProjectList.Content>
         <ProjectList.Card>

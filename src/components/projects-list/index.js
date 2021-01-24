@@ -17,8 +17,12 @@ import {
   Tool,
 } from './styles/projects-list';
 
-export default function ProjectList({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>;
+export default function ProjectList({ children, prop, ...restProps }) {
+  return (
+    <Container ref={prop} {...restProps}>
+      {children}
+    </Container>
+  );
 }
 
 ProjectList.Title = function ProjectListTitle({ children, ...restProps }) {

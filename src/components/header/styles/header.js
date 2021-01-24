@@ -62,6 +62,14 @@ export const MainText = styled.h1`
   color: #f4f5db;
   margin-bottom: 3rem;
   animation: ${moveInLeft} 1s linear;
+  @media only screen and (max-width: 75em) {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+  }
 `;
 
 export const SubText = styled.h2`
@@ -71,6 +79,14 @@ export const SubText = styled.h2`
   letter-spacing: 0.5rem;
   color: #f4f5db;
   animation: ${moveInRight} 1s linear;
+  @media only screen and (max-width: 75em) {
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+  }
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
 `;
 
 export const Icons = styled.div``;
@@ -102,5 +118,8 @@ export const Button = styled.button`
     outline: none;
     transform: translateY(-5px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.25rem;
   }
 `;

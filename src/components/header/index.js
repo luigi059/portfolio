@@ -23,6 +23,11 @@ Header.SubText = function HeaderSubText({ children, ...restProps }) {
 Header.Icons = function HeaderIcons({ children, ...restProps }) {
   return <Icons {...restProps}>{children}</Icons>;
 };
-Header.Button = function HeaderButton({ children, ...restProps }) {
-  return <Button {...restProps}>{children}</Button>;
+Header.Button = function HeaderButton({ children, prop, ...restProps }) {
+  const executeScroll = () => prop.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  return (
+    <Button onClick={executeScroll} {...restProps}>
+      {children}
+    </Button>
+  );
 };

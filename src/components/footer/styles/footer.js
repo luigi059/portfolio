@@ -14,6 +14,9 @@ export const MainText = styled.h1`
   font-weight: 400;
   color: #f4f5db;
   margin: 2rem 0;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2rem;
+  }
 `;
 
 export const SubText = styled.h2`
@@ -22,6 +25,9 @@ export const SubText = styled.h2`
   font-weight: 200;
   color: #f4f5db;
   margin-bottom: 2rem;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2rem;
+  }
 `;
 
 export const TM = styled.div`
